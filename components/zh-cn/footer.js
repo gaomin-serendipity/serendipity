@@ -14,15 +14,15 @@ class Footer extends HTMLElement {
                         © 2023 Eterance. 
                         <a class="no-underline" href="https://github.com/Eterance/web-toolbox" target="_blank" rel="nofollow">项目源码</a>
                     </p>
-                    <p>
-                        <a class="no-underline" href="https://pages.github.com/" target="_blank" rel="nofollow"> 
-                            Power by
-                            <img id="light-powerby-icon" src="/resources/github-mark.png" style="height:1.3rem;" alt="Server provider Github">
-                            <img id="dark-powerby-icon" src="/resources/github-mark-white.png" style="height:1.3rem;" alt="Server provider Github">
-                            Github Pages
-                        </a>
-                        
-                    </p>
+<!--                    <p>-->
+<!--                        <a class="no-underline" href="https://pages.github.com/" target="_blank" rel="nofollow"> -->
+<!--                            Power by-->
+<!--                            <img id="light-powerby-icon" src="/resources/github-mark.png" style="height:1.3rem;" alt="Server provider Github">-->
+<!--                            <img id="dark-powerby-icon" src="/resources/github-mark-white.png" style="height:1.3rem;" alt="Server provider Github">-->
+<!--                            Github Pages-->
+<!--                        </a>-->
+<!--                        -->
+<!--                    </p>-->
                     <p>加载耗时 <span id="loadTime"></span> 秒 | HTTP请求 <span id="requestCount"></span> 次</p>
                 </div>
             </footer>
