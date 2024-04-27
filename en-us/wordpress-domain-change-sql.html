@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Domain Migration SQL Generator - Eterance's Toolbox</title>
+    <link rel="icon" href="/resources/NFS11-256.png" type="image/png">
+
+    <!--prism.js-->
+    <script src="https://cdn.staticfile.org/prism/9000.0.1/prism.min.js"></script>
+    <script src="https://cdn.staticfile.org/prism/9000.0.1/components/prism-sql.min.js"></script>
+    <link href="https://cdn.staticfile.org/prism/9000.0.1/themes/prism.min.css" rel="stylesheet" id="prism-stylesheet-light">
+    <link href="https://cdn.staticfile.org/prism/9000.0.1/themes/prism-tomorrow.min.css" rel="stylesheet" id="prism-stylesheet-dark">
+    <!--Clipboard.js-->
+    <script src="https://cdn.staticfile.org/clipboard.js/2.0.11/clipboard.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--Components-->
+    <script src="/components/en-us/footer.js" type="text/javascript" defer></script>
+    <script src="/components/en-us/navbar.js" type="text/javascript"></script>
+    <!-- Placing it at the beginning can eliminate the white screen during loading -->
+    <script src="/js/dark.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <navbar-component></navbar-component>
+
+    <!-- Page Content -->
+    <div class="container mt-5 ">
+        <h1>WordPress Domain Migration SQL Generator</h1>
+        <br>
+        <p>
+            This tool will save you precious minutes in your life.
+        </p>
+        <p>
+            You may have failed to modify the settings correctly before changing the domain of your WordPress website, resulting in the inability to access the website after migration. You need to manipulate the database directly using SQL statements.
+        </p>
+        <p>
+            Don't worry, just enter your old and new domain here, and then execute the generated SQL statements in the database to solve the problem of the website not being accessible.
+        </p>
+        <p>
+            The table prefix can be left as the default, unless you modified it when creating the website.
+        </p>
+        <br>
+
+        <div class="row mb-3">
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <div>
+                    <label class="mb-2">Old Domain</label>
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" id="oldDomain"
+                            placeholder="https://blog1.old-domain.com">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <div>
+                    <label class="mb-2">New Domain</label>
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" id="newDomain"
+                            placeholder="https://blog2.new-domain.com">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <div>
+                    <label class="mb-2">Table Prefix</label>
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" id="tablePrefix" value="wp_" placeholder='Default "wp_"'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- On medium and above, the two buttons are placed horizontally (block arrangement) and left-aligned -->
+        <!-- Below, the two buttons are arranged vertically (grid arrangement), centered and half the width of the screen -->
+        <div class="d-grid gap-4 col-6 col-md-12 mx-auto d-md-block mb-3">
+            <button type="button" class="btn btn-primary btn-lg" onclick="generateSQL()">Generate SQL</button>
+            <button type="button" class="btn btn-secondary btn-lg" id="copyButton"
+                data-clipboard-target="#sqlCode">Copy to Clipboard</button>
+        </div>
+        <label class="mt-4 mb-2">SQL</label>
+        <pre style="border-radius: 8px;"><code id="sqlCode" class="language-sql line-numbers"></code></pre>
+    </div>
+
+    <div id="toastMessage" class="toast toast-blue" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+        <div class="toast-header">
+            <h5 class="me-auto mb-0">Tip</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            <h5 class="mb-0">SQL has been copied to the clipboard.</h5>
+        </div>
+    </div>
+    
+
+
+    <footer-component class="text-center mt-auto"></footer-component>
+
+    <script src="https://cdn.staticfile.org/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/wordpress_domain_change_sql.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/prismjs_theme_switch.js"></script>
+</body>
+
+</html>
