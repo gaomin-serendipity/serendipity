@@ -42,11 +42,6 @@ class NavBar extends HTMLElement {
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="javascript:void(0);" onclick="changeLanguage('zh-tw')">
-                                            中文(繁體) <span class="lang-explain">中文(繁体)</span>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a class="dropdown-item" href="javascript:void(0);" onclick="changeLanguage('en-us')">
                                             English(US) <span class="lang-explain">英文(美国)</span>
                                         </a>
