@@ -11,7 +11,7 @@ class NavBar extends HTMLElement {
                 <div class="container">
                     <a class="navbar-brand logo-font self-main-color" href="/en-us/">
                         <img src="/resources/NFS11-256.png" class="site-icon" alt="Site Icon">
-                        Eterance's Toolbox
+                        Serendipity's Toolbox
                     </a>
         
                     <!-- Toggle Button (for small screen devices)-->

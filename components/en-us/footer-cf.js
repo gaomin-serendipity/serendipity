@@ -11,8 +11,8 @@ class Footer extends HTMLElement {
             <!-- Move the bottom center class outside because we are using components -->
                 <div class="site-footer">
                     <p class="self-main-color">
-                        © 2023 Eterance. 
-                        <a class="no-underline" href="https://github.com/Eterance/web-toolbox" target="_blank" rel="nofollow">Source Code</a>
+                        © 2023 Serendipity. 
+                        <a class="no-underline" href="https://github.com/Serendipity/web-toolbox" target="_blank" rel="nofollow">Source Code</a>
                     </p>
                     <p>
                         <a class="no-underline" href="https://pages.cloudflare.com/" target="_blank" rel="nofollow"> 

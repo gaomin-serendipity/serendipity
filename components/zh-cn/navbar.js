@@ -11,7 +11,7 @@ class NavBar extends HTMLElement {
                 <div class="container">
                     <a class="navbar-brand logo-font self-main-color" href="/">
                         <img src="/resources/NFS11-256.png" class="site-icon" alt="Site Icon">
-                        Eterance 的百宝箱
+                        Serendipity 的百宝箱
                     </a>
         
                     <!-- 切换按钮（适用于小屏幕设备）-->
